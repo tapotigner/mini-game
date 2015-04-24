@@ -37,8 +37,8 @@ clean:
 	@echo "Cleanup complete!"
 
 .PHONEY: remove
-remove: clean
+fclean: clean
 	@$(rm) $(BINDIR)/$(TARGET)
 	@echo "Executable removed!"
 
-re: remove all
+re: fclean all
